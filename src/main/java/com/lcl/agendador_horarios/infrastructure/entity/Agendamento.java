@@ -15,10 +15,10 @@ import java.time.LocalDateTime;
 @Entity
 @Table(name = "agendamento")
 public class Agendamento {
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-
     private String servico;
     private String profissional;
     private LocalDateTime dataHoraAgendamento;
